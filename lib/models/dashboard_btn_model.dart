@@ -1,3 +1,4 @@
+import 'package:balochdevshop_admin/screens/edit_upload_product_form.dart';
 import 'package:balochdevshop_admin/screens/inner_screens/orders/orders_screen.dart';
 import 'package:balochdevshop_admin/screens/search_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,9 @@ class DashboardButtonsModel {
         DashboardButtonsModel(
           text: "Add a new product",
           imagePath: AssetsManager.cloud,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, EditOrUploadProductScreen.routeName);
+          },
         ),
         DashboardButtonsModel(
           text: "inspect all products",
